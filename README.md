@@ -3,5 +3,4 @@ Version 1 of my portfolio
 
 
 
-Goals:
-- Dark/Light Mode 
+Still need to figure out the JS of the navbar
