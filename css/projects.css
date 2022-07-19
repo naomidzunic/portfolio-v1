@@ -1,0 +1,52 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    font-family: 'Inter', sans-serif;
+  }
+  
+  body {
+    line-height: 1.5;
+    font-weight: 400;
+    background-color: #EFEFEF;
+  
+  }
+
+  .container {
+    padding-top: 5rem;
+    width: 100%;
+  }
+
+  .container-col {
+    padding-top: 3rem;
+  }
+
+  .container h1 {
+    text-align: center;
+    font-weight: 600;
+  }
+
+  img {
+    width: 50%;
+    display: block;
+    margin: 0 auto;
+    border-radius: 10px;
+  }
+
+  .container p {
+    padding-top: 2rem;
+    margin: 0 auto;
+    width: 50%;
+  }
+
+  button {
+    border: none;
+    text-transform: uppercase;
+    width: 100%;
+    margin: 0 auto;
+    padding: 2rem;
+  }
+
+  button:hover{
+    color: blue;
+  }
