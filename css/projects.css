@@ -12,41 +12,177 @@
   
   }
 
+  /* ----------NAVBAR------------- */
+
+.brand-title {
+  color: #000;
+  margin-left: 2rem;
+}
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 1.2rem;
+}
+
+.navbar-links ul {
+  margin: 0;
+  display: flex;
+  padding: 0;
+}
+
+.navbar-links li {
+  list-style: none;
+}
+
+.navbar-links li a {
+  text-decoration: none;
+  color: #000;
+  display: block;
+  padding: 1rem 1.5rem;
+}
+
+.hamburger-icon {
+  display: none;
+  color: #000;
+  cursor: pointer;
+}
+
+ @media (min-width: 45.1rem) and
+ (max-width: 100rem) {
+  
+  .brand-title {
+    display: none;
+  }
+
+  .navbar {
+    flex-direction: column;
+    align-items: flex-end;
+  } 
+  
+  .navbar-links {
+    display: none;
+    width: 100%;
+  }
+  
+  .navbar-links ul {
+    flex-direction: column;
+    width: 100%;
+    padding-top: 1.5rem;
+  }
+  
+  .navbar-links li {
+    text-align: center;
+  }
+  
+  .navbar-links li a {
+    padding: 1rem 1rem;
+  }
+  
+  .navbar-links:active {
+    display: flex;
+  }
+  
+  .hamburger-icon {
+    display: block;
+    margin-right: 2rem;
+    padding-top: 0.5rem;
+  }
+  
+ }
+
+
+
+  /* BODY */
+  
+  h1 {
+    text-align: center;
+    font-weight: 600;
+    padding-top: 2rem;
+  }
+
   .container {
-    padding-top: 5rem;
+    padding-top: 3rem;
     width: 100%;
   }
 
   .container-col {
-    padding-top: 3rem;
+    padding-top: 1.5rem;
   }
 
-  .container h1 {
+  .container-col-2 h2 {
     text-align: center;
-    font-weight: 600;
+    margin-top: 1rem;
+
+  }
+
+  .container-col-2 p {
+    padding-top: 2rem;
+    padding-bottom: 1rem;
+    margin: 0 auto;
+    width: 70%;
+    font-size: 0.875rem;
+    text-align: center;
+    line-height: 1.5;
   }
 
   img {
-    width: 50%;
+    width: 75%;
     display: block;
     margin: 0 auto;
     border-radius: 10px;
   }
 
-  .container p {
-    padding-top: 2rem;
-    margin: 0 auto;
-    width: 50%;
+  .project-btn {
+    display: flex;
+    justify-content: center;
   }
 
-  button {
-    border: none;
-    text-transform: uppercase;
-    width: 100%;
-    margin: 0 auto;
-    padding: 2rem;
+  .fa-github, .fa-laptop-code {
+    margin: 1rem;
+    padding-top: 1rem;
   }
 
-  button:hover{
+  .fa-github:hover, .fa-laptop-code:hover{
     color: blue;
+  }
+
+  @media (min-width: 45.1rem) and
+  (max-width: 100rem) {
+
+    .container-col {
+      display: flex;
+      width: 100%;
+      padding-top: 4rem;
+    }
+
+    img {
+      width: 40%;
+      margin-left: 11%;
+    }
+
+    .container-col-2 {
+      margin: 0 auto;
+      padding-left: 8%;
+      padding-top: 2rem;
+    }
+
+    .container-col-2 h2, .container-col-2 p {
+      text-align: left;
+      margin: 0;
+    }
+
+    .container-col-2 h2 {
+      padding-top: 1rem;
+    }
+
+    .container-col-2 p {
+      line-height: 1.5;
+    }
+
+    .project-btn {
+      justify-content: flex-start;
+      margin: 0;
+    }
+
   }
