@@ -3,16 +3,13 @@
   margin: 0;
   padding: 0;
   font-family: 'Inter', sans-serif;
+
 }
 
 body {
   line-height: 1.5;
   font-weight: 400;
   background-color: #EFEFEF;
-}
-
-h1 {
-  font-size: 2.5rem;
 }
 
 p {
@@ -25,110 +22,159 @@ p {
   color: #000;
   margin-left: 3rem;
   margin-top: 30px;
-  font-weight: 700;
   letter-spacing: 1.5px;
+  font-weight: 600;
 }
 
 @media screen and (min-width: 700px) {
 
   .naomi-logo {
     margin-left: 5rem;
+
   }
 }
 
+/* ----------HEADER------------- */
 
-/* ----------HOME | Header----------- */
-
-.header-container {
-  padding-top: 5rem;
-  display: flex;
-  flex-direction: column;
+.container {
+  margin: 3rem 2rem;
 }
 
-header h1 {
-  font-size: 2.5rem;
-  padding-bottom: 1rem;
-  line-height: 1.3;
+.container img {
+  width: 100%;
 }
 
-header p {
-  font-size: 0.9rem;
-  margin: 0 3.5rem;
+.tools-used {
+  padding: 1rem 0;
 }
 
-header a {
-  text-decoration: none;
-  color: #82AEB1;
-
+.project-description {
+  padding: 1.3rem 0;
 }
 
-.icons {
-  display: none;
-  color: #82AEB1;
-
-}
-
-.header-text {
-  padding-bottom: 3rem;
-  text-align: center;
-  margin: 0 auto;
-}
-
-.header-container img {
-  width: 40%;
-  display: block;
-  margin: 0 auto;
+.fa-brand,
+.fa-solid {
+  padding-left: 0.8rem;
 }
 
 @media screen and (min-width: 700px) {
 
-  .header-container {
-    padding-top: 2rem;
-    flex-direction: row;
+  /* figure out alignment */
+
+  .container {
+    display: flex;
+margin: 5% 13%;
   }
 
-  header h1 {
-    font-size: 4vw;
+  .project-description-container {
+    flex-direction: column;
+    padding: 4rem 2rem 0 2rem;
   }
 
-  header p {
-    font-size: 1.2vw;
-    margin: 0;
-    padding-bottom: 1.5rem;
+  .container img {
+    width: 45vw;
   }
-
-  .fa-brands,
-  .fa-solid {
-    padding-right: 2rem;
-  }
-
-  .icons {
-    display: contents;
-    color: #82AEB1;
-
-  }
-
-  .header-text {
-    text-align: left;
-    margin-left: 14%;
-    margin-top: 12%;
-  }
-
-  .header-container img {
-    width: 30%;
-    margin-right: 10%;
-  }
-
 }
 
 
-/* ------------HOME | Projects------- */
+
+/* ----------GOALS & PURPOSE------------- */
+
+.goals-purpose {
+  text-align: center;
+  line-height: 1.5;
+  margin: 0 2rem;
+  padding: 2.5rem 0;
+}
+
+.goals-purpose h2 {
+  padding-bottom: 1.5rem;
+  color: #82AEB1;
+
+}
+
+@media screen and (min-width: 700px) {
+
+  .goals-purpose {
+    text-align: center;
+    padding: 4rem 25%;
+
+  }
+  
+  .goals-purpose h2 {
+    padding-bottom: 1.5rem;
+    font-size: 2rem;
+  }
+}
+
+/* ----------PHOTO COLLAGE------------- */
+
+.photos img, .photo img{
+  width: 100%;
+  margin-bottom: 1rem;
+}
+.photos, .photo {
+  padding: 0 1rem;
+}
+
+@media screen and (min-width: 700px) {
+  .photos {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-content: center;
+    gap: 2rem;
+  }
+
+  .photos img, .photo img{
+    margin-bottom: 3rem;
+  }
+
+  .photos img {
+    width: 45vw;
+  }
+
+  .photo img {
+    width: 100%;
+    padding: 0 3%;
+  }
+
+  .photo {
+    margin: 0 auto;
+  }
+
+
+}
+
+/* ----------Problems / Solutions / What I Learned------------- */
+
+.problem-solutions, .what-i-learned {
+  margin: 3rem 2rem;
+}
+
+.what-i-learned {
+  text-align: right;
+}
+
+.problem-solutions h1, .what-i-learned h1 {
+  padding-bottom: 1.3rem;
+  color: #82AEB1;
+
+}
+
+@media screen and (min-width: 700px) {
+  .problem-solutions, .what-i-learned {
+    margin: 5rem 15%;
+  }
+  
+}
+
+/* ----------OTHER PROJECTS------------- */
 
 section {
-  background-color: gainsboro;
+  background-color: #979797;
   padding-top: 7rem;
   padding-bottom: 5rem;
-  color: #222;
 }
 
 .project-container {
@@ -145,6 +191,7 @@ section {
 
 .project-txt {
   padding: 1rem;
+  color: #fff;
 }
 
 .project-txt h2 {
@@ -161,6 +208,7 @@ section {
 
 .view-project {
   border: none;
+  color: #fff;
   background-color: transparent;
   text-transform: uppercase;
   margin-top: 2rem;
@@ -187,12 +235,12 @@ section {
 }
 
 
-/* ------------HOME | Footer------- */
+/* ------------PROJECTS | Footer------- */
 
 footer {
+  width: 100%;
   background-color: #222;
   color: #fff;
-  width: 100%;
 }
 
 .footer-container {
@@ -236,6 +284,5 @@ footer p {
    font-size: 1rem;
    padding-left: 1rem;
  }
-
- 
 }
+
