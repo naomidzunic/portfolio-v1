@@ -7,7 +7,7 @@
 
 body {
   line-height: 1.5;
-  font-weight: 400;
+  font-weight: 300;
   background-color: #EFEFEF;
 }
 
@@ -24,15 +24,42 @@ p {
 .naomi-logo {
   color: #000;
   margin-left: 3rem;
-  margin-top: 30px;
+  /* margin-top: 30px; */
   font-weight: 700;
   letter-spacing: 1.5px;
 }
 
+.naomi-logo span {
+  font-size: 2rem;
+  line-height: 1.1;
+}
+
 @media screen and (min-width: 700px) {
 
-  .naomi-logo {
+  .navbar {
+    display:flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-top: 30px;
+    margin: 2% 5%;
+  }
+
+  /* .naomi-logo {
     margin-left: 5rem;
+  } */
+
+  .nav-button {
+    display: flex;
+    justify-content: space-evenly;
+    gap: 1rem;
+  }
+
+  .nav-button button {
+    padding: 15px 35px;
+    background: transparent;
+    border: 1px solid black;
+    font-size: 1vw;
+    border-radius: 25px;
   }
 }
 
@@ -58,13 +85,13 @@ header p {
 
 header a {
   text-decoration: none;
-  color: #82AEB1;
+  color: #F28543;
 
 }
 
 .icons {
   display: none;
-  color: #82AEB1;
+  color: #F28543;
 
 }
 
@@ -95,6 +122,9 @@ header a {
     font-size: 1.2vw;
     margin: 0;
     padding-bottom: 1.5rem;
+    width: 60%;
+    display: block;
+    margin: 0 auto;
   }
 
   .fa-brands,
@@ -109,9 +139,14 @@ header a {
   }
 
   .header-text {
-    text-align: left;
-    margin-left: 14%;
-    margin-top: 12%;
+    /*text-align: left;
+     margin-left: 14%;
+    margin-top: 12%; */
+    text-align: center;
+    margin-left: 6%;
+    margin-right: 6%;
+    margin-top: 6%;
+  
   }
 
   .header-container img {
@@ -125,7 +160,8 @@ header a {
 /* ------------HOME | Projects------- */
 
 section {
-  background-color: gainsboro;
+  background-color: #EFEFEF;
+
   padding-top: 7rem;
   padding-bottom: 5rem;
   color: #222;
