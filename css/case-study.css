@@ -18,20 +18,64 @@ p {
 
 /* ----------NAVBAR------------- */
 
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  margin: 0 2rem;
+    align-items: center;
+    padding: 1rem;
+}
+
 .naomi-logo {
   color: #000;
-  margin-left: 3rem;
-  margin-top: 30px;
+  font-weight: 700;
   letter-spacing: 1.5px;
-  font-weight: 600;
 }
+
+.naomi-logo span {
+  font-size: 2rem;
+  line-height: 1.1;
+}
+
+.nav-button button {
+border: 2px solid orange;
+  background: orange;
+    color: white;
+    text-transform: uppercase;
+    padding: 1rem 2rem;
+    border-radius: 28px;
+}
+
 
 @media screen and (min-width: 700px) {
 
-  .naomi-logo {
-    margin-left: 5rem;
-
+  .navbar {
+    display:flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-top: 30px;
+    margin: 2% 5%;
   }
+  .nav-button {
+    display: flex;
+    justify-content: space-evenly;
+    gap: 1rem;
+  }
+
+  .nav-button button {
+    padding: 15px 20px;
+    background: orange;
+    text-transform: uppercase;
+border: 2px solid orange; 
+color: white;
+    font-size: 1vw;
+    border-radius: 28px;
+  }
+
+  /* .nav-button button:hover {
+    border-bottom: 2px solid red;
+    cursor: pointer;
+  } */
 }
 
 /* ----------HEADER------------- */

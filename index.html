@@ -28,24 +28,30 @@
 
   <nav class="navbar">
     
-    <div class="naomi-logo"><a href="/index.html"></a><span style="color: #F38643">N</span><span style="color: #BD9EFD">A</span><br><span style="color: #EDCC46">O</span><span style="color: #0FC0DF">M</span><span style="color: #01BF62">I</span></a></div>
+    <div class="naomi-logo"><a href="/index.html" style="text-decoration:none;"><span style="color: #F38643">N</span><span style="color: #BD9EFD">A</span><br><span style="color: #EDCC46">O</span><span style="color: #0FC0DF">M</span><span style="color: #01BF62">I</span></a></div>
     <div class="nav-button">
-    <button>Projects</button>
+    <!-- <button href="/pages/project.html">Projects</button> -->
     <button>Contact</button>
-    <button>Resume</button>
+    <!-- <button>Resume</button> -->
   </div>
 
 
   </nav>
 
   <header>
-    <div class="header-container">
-  
+    <!----GRADIENT BACKGROUND LEFT-->
+    <div class="gradient-box">
+    <div class="bg-shape bg-primary opacity-50 bg-blur"></div>
+    <div class="bg-shape bg-lilac opacity-50 bg-blur"></div>
+    <!-- <div class="bg-shape2 bg-primary opacity-50 bg-blur"></div>
+    <div class="bg-shape2 bg-lilac opacity-50 bg-blur"></div> -->
+  </div>
 
-  
+<!----HEADER-->
+    <div class="header-container">
       <div class="header-text">
-        <h1>Hey there, I'm Naomi!</h1>
-        <p>With over 3 years as a front-end developer, I'm currently on the hunt to expand my skills and career surrounded by like-minded individuals in a team setting. My hobbies include learning current design trends and creating new templates that are clean and easy to use. </p>
+        <h1>Hey there, I'm <span style="background: linear-gradient(to bottom, transparent 50%, #EDCC46 50%);">Naomi!</span></h1>
+        <p>With over 3 years as a front-end developer, seeking to expand my skills and career surrounded by like-minded individuals in a team setting. My hobbies include learning current design trends and creating new templates that are clean and easy to use. </p>
           <div class="icon-container">
             <div class="icons">
               <a href="https://github.com/naomidzunic"><i class="fa-brands fa-github fa-lg"></i></a>
@@ -54,22 +60,35 @@
             </div>
           </div>
       </div>
-      <!-- <img src="./images/BW-Headshot.png" alt=""> -->
-      <!-- <img src="./images/Image.png" alt=""> -->
     </div>
   
     </div>
   </header>
 
 
-
+<!-----PROJECT SECTION----->
 
   <section>
+        <!----GRADIENT BACKGROUND LEFT-->
+        <div class="gradient-box">
+          <div class="bg-shape2 bg-primary opacity-50 bg-blur"></div>
+          <div class="bg-shape2 bg-lilac opacity-50 bg-blur"></div>
+        </div>
     <div class="project-container">
       <div class="project-section">
-        <img src="./images/coffee-preview.jpg" alt="">
+        <img src="./images/tebra-portfolio.png" alt="">
         <div class="project-txt">
-          <h2>Coffee Subscription Site</h2>
+          <h2>Tebra</h2>
+          <p>Caffeine, black java doppio sugar cultivar steamed iced cup redeye. Dark milk seasonal saucer fair trade
+            french press irish. </p>
+          <a href="pages/tebra-project.html"><button class="view-project">View Project ></button></a>
+        </div>
+      </div>
+
+      <div class="project-section">
+        <img src="./images/WF Services.png" alt="">
+        <div class="project-txt">
+          <h2>Wild & Free Services</h2>
           <p>Caffeine, black java doppio sugar cultivar steamed iced cup redeye. Dark milk seasonal saucer fair trade
             french press irish. </p>
           <button class="view-project">View Project ></button>
@@ -77,28 +96,56 @@
       </div>
 
       <div class="project-section">
-        <img src="./images/coffee-preview.jpg" alt="">
+        <img src="./images/Order Summary.png" alt="">
         <div class="project-txt">
-          <h2>Coffee Subscription Site</h2>
+          <h2>Order Summary</h2>
           <p>Caffeine, black java doppio sugar cultivar steamed iced cup redeye. Dark milk seasonal saucer fair trade
             french press irish. </p>
           <button class="view-project">View Project ></button>
         </div>
       </div>
-
-      <div class="project-section">
-        <img src="./images/coffee-preview.jpg" alt="">
-        <div class="project-txt">
-          <h2>Coffee Subscription Site</h2>
-          <p>Caffeine, black java doppio sugar cultivar steamed iced cup redeye. Dark milk seasonal saucer fair trade
-            french press irish. </p>
-          <button class="view-project">View Project ></button>
-        </div>
-      </div>
-
-
-
+     
     </div>
+    
+    
+    <!-- <div class="view-more">
+      <button>See More</button>
+    </div>
+
+
+
+    <div class="project-container">
+      <div class="project-section">
+        <img src="./images/art-gallery.png" alt="">
+        <div class="project-txt">
+          <h2>Art Gallery</h2>
+          <p>Caffeine, black java doppio sugar cultivar steamed iced cup redeye. Dark milk seasonal saucer fair trade
+            french press irish. </p>
+          <button class="view-project">View Project ></button>
+        </div>
+      </div>
+
+      <div class="project-section">
+        <img src="./images/Preview Card.png" alt="">
+        <div class="project-txt">
+          <h2>Preview Card</h2>
+          <p>Caffeine, black java doppio sugar cultivar steamed iced cup redeye. Dark milk seasonal saucer fair trade
+            french press irish. </p>
+          <button class="view-project">View Project ></button>
+        </div>
+      </div>
+
+      <div class="project-section" style="visibility: hidden;">
+        <img src="./images/coffee-preview.jpg" alt="">
+        <div class="project-txt">
+          <h2>Card Details</h2>
+          <p>Caffeine, black java doppio sugar cultivar steamed iced cup redeye. Dark milk seasonal saucer fair trade
+            french press irish. </p>
+          <button class="view-project">View Project ></button>
+        </div>
+      </div>
+    </div> -->
+
   </section>
 
 
@@ -117,7 +164,7 @@
 
  <!-- JAVASCRIPT -->
   
- <script src="index.js"></script>
+ <!-- <script src="index.js"></script> -->
 
 </body>
 
