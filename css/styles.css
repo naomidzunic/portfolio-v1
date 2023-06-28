@@ -23,6 +23,8 @@ p {
 
 
 
+
+
 /* ------GRADIENT BACKGROUND-------- */
 .gradient-box {
   position: relative;
@@ -108,7 +110,7 @@ filter: blur(192px);
   }
 
   .nav-button button {
-    padding: 15px 20px;
+    padding: 15px 35px;
     background: orange;
     text-transform: uppercase;
 border: 2px solid orange; 
@@ -226,6 +228,7 @@ section {
   display: flex;
   flex-direction: column;
   gap: 5rem;
+  flex-wrap: wrap;
 }
 
 .project-section {
@@ -254,6 +257,11 @@ section {
   font-size: 1rem;
 }
 
+.project-txt a {
+text-decoration: none;
+  color: black;
+}
+
 .view-project {
   border: none;
   background-color: transparent;
@@ -274,6 +282,17 @@ section {
   padding: 1rem 2rem;
   display: block; 
   margin:0 auto;
+}
+
+.github-icons {
+  display: flex;
+  flex-direction: row;
+  justify-content:left;
+  padding-top:1rem;
+}
+.github-icons i {
+  color: black;
+  padding-right:1rem;
 }
 
 @media screen and (min-width: 700px) {
@@ -308,6 +327,9 @@ footer {
   align-content: center;
   padding: 3rem;
 }
+.footer-container > div {
+  padding-top: 2rem;
+}
 
 footer h1 {
   font-size: 1.5rem;
@@ -317,6 +339,12 @@ footer h1 {
 footer p {
   text-align: right;
   padding-top: 2rem;
+}
+
+.div-icons i {
+  padding-left: 2rem;
+  padding-right: 0;
+  color: white;
 }
 
 .back-to-top {
@@ -333,6 +361,8 @@ footer p {
    align-items: center;
  }
 
+ 
+
  footer h1 {
    font-size: 3.7vw;
    padding-right: 1rem;
@@ -344,5 +374,12 @@ footer p {
    padding-left: 1rem;
  }
 
+
  
+}
+
+/* HOME - PAST FOOTER */
+
+#shadow-host-companion {
+  display: none;
 }
