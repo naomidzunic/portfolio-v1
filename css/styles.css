@@ -227,16 +227,25 @@ section {
   margin: 0 auto;
   display: flex;
   flex-direction: column;
+  justify-content: center;
   gap: 5rem;
   flex-wrap: wrap;
 }
 
 .project-section {
-  flex: 1;
+  /* flex: 1; */
+  flex-basis: 40%;
 }
 
 .project-section img {
   width: 100%;
+}
+
+.project-section h3 {
+  font-weight: normal;
+  font-size: 1rem;
+  text-transform:uppercase;
+  letter-spacing: 1px;
 }
 
 .project-txt {
